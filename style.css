@@ -1,0 +1,22 @@
+#flexbox{
+  display: flex;
+  background-color: gray;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  width: 33%;
+}
+/* khi đầy màn hình thì tự động xuống hàng phân bổ ra màn hình */
+
+@media(max-width: 700px) {
+  .card{
+    width: 50%;
+  }
+}
+@media(max-width: 600px) {
+  .card{
+    width: 100%;
+  }
+}
+/* cách đặt điều kiện như trên */
